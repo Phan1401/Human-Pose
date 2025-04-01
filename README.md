@@ -3,7 +3,7 @@
 ## Project Description
 This project utilizes an LSTM model to classify human poses from skeleton data extracted using Mediapipe. The project consists of three main notebooks:
 
-1. **create_data.ipynb**: Prepares the environment and installs necessary libraries.
+1. **create_data.ipynb**: Generates training data for the LSTM model.
 2. **lstm_.ipynb**: Trains the LSTM model for pose classification.
 3. **rc_lstm.ipynb**: Real-time pose recognition from webcam.
 
