@@ -36,9 +36,3 @@ Run `rc_lstm.ipynb`:
 - The webcam will be activated for pose recognition.
 - Press `q` to exit.
 
-## Contribution
-For suggestions and improvements, please contact the development team via email.
-
-## License
-This project is licensed under the MIT License.
-
