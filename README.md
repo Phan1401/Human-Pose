@@ -14,8 +14,10 @@ pip install numpy pandas tensorflow keras mediapipe opencv-python
 ```
 
 ## Usage Guide
-### Step 1: Data Preparation
-- Pose data files should be in CSV format and contain skeleton frames extracted from Mediapipe.
+### Step 1: Data Generation
+Run `create_data.ipynb` to generate training data:
+- The notebook uses Mediapipe to extract skeleton data from video or image sources.
+- The generated data will be saved in CSV format for model training.
 - The pose labels include:
   - ngoi_lam_viec
   - ngoi_nga_lung
@@ -39,3 +41,4 @@ For suggestions and improvements, please contact the development team via email.
 
 ## License
 This project is licensed under the MIT License.
+
