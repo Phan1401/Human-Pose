@@ -1,7 +1,8 @@
 opencv-python
 mediapipe
 keras
-sklearn
+scikit-learn
 numpy
 pandas
 tensorflow
+streamlit
