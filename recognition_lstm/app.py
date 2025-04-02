@@ -10,7 +10,7 @@ st.title('Human-Pose')
 frame_placeholder = st.empty()
 stop_button_pressed = st.button('Stop')
 # Load model đã train
-model = tf.keras.models.load_model("Human-Pose/model_weight/best_lstm_model.keras",safe_mode=False)
+model = tf.keras.models.load_model("model_weight/best_lstm_model.keras",safe_mode=False)
 
 # Khởi tạo Mediapipe Pose
 mp_pose = mp.solutions.pose
