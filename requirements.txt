@@ -4,6 +4,6 @@ keras
 scikit-learn
 numpy
 pandas
-tensorflow
+tensorflow-cpu
 streamlit
 streamlit_webrtc
