@@ -22,7 +22,7 @@ label = "Khởi động..."
 n_time_steps = 10  # Số khung hình đầu vào
 lm_list = []
 warmup_frames = 30  # Số frame chờ trước khi bắt đầu dự đoán
-cap = cv2.VideoCapture(0)
+cap = cv2.VideoCapture(913)
 
 # Tạo danh sách class hành động
 classes = ["LAM VIEC", "NGA LUNG", "NAM NGU", "GAC CHAN", "DUNG DAY","DI LAI"]
