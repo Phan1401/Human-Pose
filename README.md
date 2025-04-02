@@ -32,7 +32,8 @@ Run `lstm_.ipynb` to train the model:
 - The trained model will be automatically saved as `best_lstm_model.keras`.
 
 ### Step 3: Real-Time Pose Recognition
-Run `rc_lstm.ipynb`:
+Run `recog_lstm.ipynb`:
+- You need to download this "!wget -O pose_landmarker.task -q https://storage.googleapis.com/mediapipe-models/pose_landmarker/pose_landmarker_heavy/float16/1/pose_landmarker_heavy.task"
 - The webcam will be activated for pose recognition.
 - Press `q` to exit.
 
