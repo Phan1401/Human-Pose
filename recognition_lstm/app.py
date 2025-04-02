@@ -5,7 +5,7 @@ import threading
 import tensorflow as tf
 import time
 import streamlit as st
-
+tf.config.set_visible_devices([], 'GPU')
 st.title('Human-Pose')
 frame_placeholder = st.empty()
 stop_button_pressed = st.button('Stop')
