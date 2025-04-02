@@ -10,7 +10,7 @@ st.title('Human-Pose')
 frame_placeholder = st.empty()
 stop_button_pressed = st.button('Stop')
 # Load model đã train
-model = tf.keras.models.load_model("model_weight/best_lstm_model.keras",safe_mode=False)
+model = tf.keras.models.load_model("/home/phan/Human-Pose/model_weight/best_lstm_model.keras",safe_mode=False)
 
 # Khởi tạo Mediapipe Pose
 mp_pose = mp.solutions.pose
@@ -91,14 +91,17 @@ while True and not stop_button_pressed:
     cv2.putText(img, f"FPS: {int(fps)}", (10, 70), cv2.FONT_HERSHEY_SIMPLEX, 1, (255, 0, 0), 2)
 
     # Hiển thị ảnh
-    frame_placeholder.image(img,channels='BGR',)
+    frame_placeholder.image(img,channels='BGR')
     # cv2.imshow("Pose Classification", img)
-    if cv2.waitKey(1) & 0xFF == ord('q') or stop_button_pressed:
+    # if cv2.waitKey(1) & 0xFF == ord('q') or stop_button_pressed:
+    #     st.write
+    #     break
+    
+    if  stop_button_pressed:
         st.write
         break
-
     frame_count += 1
 
 # Giải phóng tài nguyên
 cap.release()
-cv2.destroyAllWindows()
+# cv2.destroyAllWindows()
